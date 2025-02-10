@@ -107,9 +107,9 @@ export const AboutSection = () => {
                 title="My Toolbox"
                 description="Explore the technologies and tools I use to craft exceptional digital experiences."
                 className="" />
-              <ToolboxItems items={toolboxItems} className="" />
+              <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left-sm [animation-duration:2s]" />
               <ToolboxItems items={toolboxItems} className="mt-6"
-                itemsWrapperClassName="-translate-x-72" />
+                itemsWrapperClassName="animate-move-right-sm [animation-duration:10s]" />
             </Card>
           </div>
 
