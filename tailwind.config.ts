@@ -52,16 +52,12 @@ const config: Config = {
             transform: 'translateX(0%)'
           },
           '100%': {
-            transform: 'translateX(-80%)'
+            transform: 'translateX(-50%)'
           }
         },
         'move-right-sm': {
-          '0%': {
-            transform: 'translateX(-80%)'
-          },
-          '100%': {
-            transform: 'translateX(0%)'
-          }
+          '0%': { transform: 'translateX(-50%)' }, // Start far left
+          '100%': { transform: 'translateX(0%)' } // End at rest position
         }
       }
     },
