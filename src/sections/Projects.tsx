@@ -11,6 +11,7 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
+    id: 1,
     company: "Acme Corp",
     year: "2022",
     title: "Dark Saas Landing Page",
@@ -23,6 +24,7 @@ const portfolioProjects = [
     image: darkSaasLandingPage,
   },
   {
+    id: 2,
     company: "Innovative Co",
     year: "2021",
     title: "Light Saas Landing Page",
@@ -35,6 +37,7 @@ const portfolioProjects = [
     image: lightSaasLandingPage,
   },
   {
+    id: 3,
     company: "Quantum Dynamics",
     year: "2023",
     title: "AI Startup Landing Page",
@@ -76,7 +79,7 @@ export const ProjectsSection = () => {
 
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map(result => (
-                      <li className="flex gap-2 text-sm md:text-base text-white/50">
+                      <li key={project.id} className="flex gap-2 text-sm md:text-base text-white/50">
                         <CheckCirleIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>
